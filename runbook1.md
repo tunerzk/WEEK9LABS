@@ -1,6 +1,13 @@
 ⭐ Part 1 — ClickOps (Manual GCP Console Steps)
 These are the steps performed manually in the Google Cloud Console.
 
+Prereqs:
+A working Instance Template
+A Managed Instance Group (MIG) created from that template
+MIG must be zonal or regional (regional recommended)
+MIG instances must serve traffic on a known port (e.g., 80 or 8080)
+
+
 1️⃣ Create VPC Network
 Navigate to VPC Network → VPC Networks
 
