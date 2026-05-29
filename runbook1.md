@@ -62,3 +62,34 @@ Port 80
 Assign global IP
 
 Attach HTTP proxy
+
+Review & Create
+Review:
+
+Global external LB
+
+URL map
+
+Backend service → MIG
+
+Health check
+
+Frontend IP
+
+Click Create
+
+Provisioning takes ~2–4 minutes.
+
+
+7. Post‑Deployment Validation
+Check LB health:  
+Network Services → Load Balancing → Your LB → Backend → Health
+
+Healthy = green checks on all MIG instances.
+
+Test externally:
+
+
+Code
+curl http://<global-ip>
+Expect 200 OK from MIG instances.
