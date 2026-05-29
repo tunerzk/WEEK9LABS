@@ -23,6 +23,7 @@ Add startup script to install Apache or NGINX
 Attach to the custom VPC
 
 4️⃣ Create Managed Instance Group (MIG)
+
 Use the instance template
 
 Set autoscaling (optional)
@@ -30,19 +31,25 @@ Set autoscaling (optional)
 Deploy in the same region as the subnet
 
 5️⃣ Create Health Check
+
 HTTP health check on port 80
 
 6️⃣ Create Backend Service
+
 Attach the MIG
+
 Attach the health check
 
 7️⃣ Create URL Map
+
 Default route → backend service
 
 8️⃣ Create Target HTTP Proxy
+
 Attach the URL map
 
 9️⃣ Create Global Forwarding Rule
+
 Port 80
 
 Assign global IP
